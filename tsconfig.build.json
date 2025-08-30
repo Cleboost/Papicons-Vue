@@ -1,4 +1,18 @@
 {
-  "extends": "./tsconfig",
-  "exclude": ["example", "lib"]
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "noEmit": false,
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "outDir": "./dist",
+    "rootDir": "./src"
+  },
+  "exclude": [
+    "example/**/*",
+    "node_modules/**/*",
+    "dist/**/*"
+  ],
+  "include": [
+    "src/**/*"
+  ]
 }

@@ -1,29 +1,20 @@
 {
-  "name": "papicons-example",
-  "version": "1.0.0",
-  "main": "index.js",
+  "name": "papicons-example-vue",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
   "scripts": {
-    "start": "expo start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
-    "web": "expo start --web"
+    "dev": "bun vite",
+    "build": "bun vite build",
+    "preview": "bun vite preview"
   },
   "dependencies": {
-    "@expo/metro-runtime": "~5.0.4",
-    "expo": "~53.0.20",
-    "expo-status-bar": "~2.2.3",
-    "react": "^19.0.0",
-    "react-dom": "19.0.0",
-    "react-native": "0.79.5",
-    "react-native-web": "~0.20.0",
-    "papicons": "file:../",
-    "react-native-safe-area-context": "5.4.0",
-    "@react-native-community/slider": "4.5.6"
+    "vue": "^3.5.13",
+    "papicons-vue": "file:../"
   },
   "devDependencies": {
-    "@babel/core": "^7.20.0",
-    "react-native-builder-bob": "^0.40.13",
-    "react-native-monorepo-config": "^0.1.9"
-  },
-  "private": true
+    "vite": "^5.4.10",
+    "@vitejs/plugin-vue": "^5.1.4",
+    "typescript": "^5.8.3"
+  }
 }

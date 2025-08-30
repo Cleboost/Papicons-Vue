@@ -1,6 +1,13 @@
 {
-  "extends": "../tsconfig",
   "compilerOptions": {
-    // Avoid expo-cli auto-generating a tsconfig
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "strict": true,
+    "jsx": "preserve",
+    "types": ["vite/client"],
+    "allowJs": false,
+    "resolveJsonModule": true,
+    "isolatedModules": true
   }
 }
